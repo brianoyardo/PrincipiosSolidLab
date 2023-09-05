@@ -20,12 +20,12 @@
 //     }
 // }
 ///////////////////////////////////////////////////////////////////////////
-interface DispositivoIluminacion {
+interface DispositivoLuz {
     encender(): void;
     apagar(): void;
 }
 
-class Luz implements DispositivoIluminacion {
+class Luz implements DispositivoLuz {
     private encendida: boolean = false;
 
     encender() {
@@ -48,9 +48,9 @@ class Luz implements DispositivoIluminacion {
 }
 
 class Interruptor {
-    private dispositivo: DispositivoIluminacion;
+    private dispositivo: DispositivoLuz;
 
-    constructor(dispositivo: DispositivoIluminacion) {
+    constructor(dispositivo: DispositivoLuz) {
         this.dispositivo = dispositivo;
     }
 
