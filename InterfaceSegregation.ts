@@ -92,15 +92,3 @@ class ReproductorMP3 extends DispositivoElectronico implements ReproductorMusica
         }
     }
 }
-
-const miSmartphone = new Smartphone();
-miSmartphone.encender();
-miSmartphone.reproducirMusica();
-miSmartphone.reproducirVideo();
-miSmartphone.leerEbook();
-miSmartphone.apagar();
-
-const miReproductorMP3 = new ReproductorMP3();
-miReproductorMP3.encender();
-miReproductorMP3.reproducirMusica();
-miReproductorMP3.apagar();

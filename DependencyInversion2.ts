@@ -32,7 +32,7 @@ class Configuracion {
 
 interface Almacenamiento {
     guardar(configuracion: Configuracion): void;
-    obtener(): Configuracion | null; // Puede devolver null si no se encuentra la configuración
+    obtener(): Configuracion | null;
 }
 
 class BaseDeDatos implements Almacenamiento {
@@ -69,16 +69,4 @@ class GestorConfiguraciones {
             return null;
         }
     }
-}
-
-// Ejemplo de uso con BaseDeDatos como almacenamiento
-const dbAlmacenamiento = new BaseDeDatos();
-const gestor = new GestorConfiguraciones(dbAlmacenamiento);
-
-gestor.guardarConfiguracion("nuevo_valor");
-const configuracion = gestor.obtenerConfiguracion();
-if (configuracion) {
-    console.log(`Valor de configuración obtenido: ${configuracion.valor}`);
-} else {
-    console.log("No se pudo obtener la configuración.");
 }

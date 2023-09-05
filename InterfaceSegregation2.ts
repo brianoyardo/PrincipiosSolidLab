@@ -106,16 +106,3 @@ class Perro extends Animal implements Terrestre {
         console.log(`${this.nombre} ladra`);
     }
 }
-
-// Ejemplo de uso
-const aguila = new Aguila();
-aguila.volar();
-aguila.hacerSonido();
-
-const tiburon = new Tiburon();
-tiburon.nadar();
-tiburon.hacerSonido();
-
-const perro = new Perro();
-perro.caminar();
-perro.hacerSonido();
