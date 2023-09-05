@@ -64,10 +64,3 @@ class Interruptor {
         }
     }
 }
-
-// Ejemplo de uso
-const Luzejem = new Luz();
-const Interruptorejem = new Interruptor(Luzejem);
-
-Interruptorejem.operar(); // Enciende la luz
-Interruptorejem.operar(); // Apaga la luz
