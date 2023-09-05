@@ -41,8 +41,6 @@
 // }
 ///////////////////////////////////////////////////////////////////////////
 
-// Interfaces para definir comportamientos comunes
-// Interfaces para definir comportamientos comunes
 interface Terrestre {
     caminar(): void;
 }
@@ -59,7 +57,6 @@ interface SonidoAnimal {
     hacerSonido(): void;
 }
 
-// Clase base para representar animales
 class Animal implements SonidoAnimal {
     constructor(public nombre: string) {}
 
@@ -68,7 +65,6 @@ class Animal implements SonidoAnimal {
     }
 }
 
-// Clases específicas para diferentes tipos de animales
 class Aguila extends Animal implements Aereo {
     constructor() {
         super("Águila");
